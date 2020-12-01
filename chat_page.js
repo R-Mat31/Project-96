@@ -13,7 +13,7 @@ room_name = localStorage.getItem("room_name");
 function send(){
  message = document.getElementById("msg").value;
  firebase.database().ref(room_name).push({
-  sender : userName,
+  sender : user_name,
   message : message,
   likes : 0
  });
